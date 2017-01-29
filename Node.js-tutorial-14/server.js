@@ -2,9 +2,9 @@ var http = require('http');
 var fs = require('fs');
 
 //404 response
-function send404Response(reponse) {
+function send404Response(response) {
     response.writeHead(404,{"Content-Type": "text/plain"});
-    reponse.end("Error 404: Page not found!");
+    response.end("Error 404: Page not found!");
 }
 
 // handle a user request
